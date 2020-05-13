@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_height="120dp" android:columnCount="3"
+    android:rowCount="2" android:padding="5dp" >
+    <Button
+        android:id="@+id/lightSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#827397"
+        android:text="Light "
+        android:layout_marginRight="10dp"
+
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <Button
+        android:id="@+id/gyro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#827397"
+        android:text="Gyro"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <Button
+        android:id="@+id/accelemeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#827397"
+        android:text="Accelemeter"
+        android:textColor="#FFFFFF"
+
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="9dp" />
+
+    <Button
+        android:id="@+id/game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#827397"
+        android:text="Game"
+        android:layout_gravity="center"
+
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="14dp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="sensor list"
+    android:layout_marginLeft="10dp"
+    android:textSize="24dp"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="center"
+    android:textAlignment="center"/>
+    <Button
+        android:id="@+id/local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#827397"
+        android:layout_gravity="center"
+        android:text="GPS"
+        android:textColor="#FFFFFF"
+
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+
+</GridLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerViewer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
